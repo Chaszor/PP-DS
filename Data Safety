@@ -1,0 +1,27 @@
+📋 Data Safety Summary (for Play Console)
+
+When you fill out the Data Safety form in Google Play Console, here’s how your app looks based on your current features:
+
+✅ Collected but not shared with developer:
+
+Location (approximate / precise) – used for setting start location.
+
+Contacts (addresses) – only if the user imports contacts. Stored locally.
+
+Device or App identifiers – collected by AdMob (for ads) and Google Play (for billing/analytics).
+
+✅ Data sharing:
+
+Ads SDK (AdMob) may share identifiers with third parties.
+
+Purchases go through Google Play Billing (Google-managed).
+
+✅ Data stored on device only:
+
+Routes, stops, and contacts.
+
+✅ Security practices:
+
+Data is not encrypted in transit (local storage only, no transmission).
+
+Data is not sold.
