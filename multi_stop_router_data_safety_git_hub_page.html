@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Safety • MultiStop Router</title>
+  <meta name="description" content="Data Safety summary for the MultiStop Router Android app." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Simple, GitHub Pages–friendly styles -->
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0f172a;
+      --text: #e6eefc;
+      --muted: #9fb3c8;
+      --accent: #38bdf8;
+      --link: #7dd3fc;
+      --ok: #34d399;
+      --warn: #fbbf24;
+      --bad: #f87171;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --text: #0b1020;
+        --muted: #475569;
+        --accent: #0284c7;
+        --link: #0369a1;
+        --shadow: 0 10px 30px rgba(2,8,23,.06);
+      }
+    }
+    body {
+      margin: 0; font: 16px/1.6 system-ui, sans-serif;
+      color: var(--text); background: var(--bg);
+    }
+    header { max-width: 900px; margin: 48px auto 0; padding: 0 20px; }
+    .card { max-width: 900px; margin: 16px auto 64px; padding: 28px; background: var(--panel);
+      border: 1px solid rgba(148,163,184,.2); border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    h1, h2 { line-height: 1.2; margin: 0 0 12px; }
+    h1 { font-size: clamp(28px, 3.6vw, 40px); letter-spacing: -0.02em; }
+    h2 { font-size: clamp(20px, 2.2vw, 26px); margin-top: 28px; }
+    ul { margin: 8px 0 16px 1.25rem; padding: 0; }
+    li { margin: 6px 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 999px; background: rgba(56,189,248,.15); color: var(--accent); font-weight: 600; font-size: 14px; }
+    .muted { color: var(--muted); }
+    .list-checks li::marker { content: "✔ "; color: var(--ok); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">📋 Data Safety</span>
+    <h1>MultiStop Router</h1>
+    <p class="muted">Play Console Summary</p>
+  </header>
+
+  <main class="card" role="main">
+    <section>
+      <h2>Collected but not shared with developer</h2>
+      <ul class="list-checks">
+        <li><strong>Location (approximate / precise):</strong> Used for setting start location.</li>
+        <li><strong>Contacts (addresses):</strong> Only if the user imports contacts. Stored locally.</li>
+        <li><strong>Device or App identifiers:</strong> Collected by AdMob (for ads) and Google Play (for billing/analytics).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data sharing</h2>
+      <ul>
+        <li>Ads SDK (AdMob) may share identifiers with third parties.</li>
+        <li>Purchases go through Google Play Billing (Google-managed).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data stored on device only</h2>
+      <ul>
+        <li>Routes, stops, and contacts remain on the user’s device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Security practices</h2>
+      <ul>
+        <li>Data is not encrypted in transit (local storage only, no transmission).</li>
+        <li>Data is not sold.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
